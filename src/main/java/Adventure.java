@@ -41,9 +41,6 @@ public class Adventure {
             if (player.getCurrentRoom().getNorth()!= null);
                 else System.out.println("You cannot move this way");
 
-            // get current room
-            // check if north room exists
-            // move or print status
         }
 
         if (direction.equals("east")) {
@@ -67,6 +64,9 @@ public class Adventure {
                 else System.out.println("You cannot move this way");
 
 
+            // get current room
+            // check if north room exists
+            // move or print status
         }
 
 
