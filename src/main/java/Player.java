@@ -1,23 +1,18 @@
-
 public class Player {
 
 
     private Rooms currentRoom;
-
     public Rooms getCurrentRoom() {
         return currentRoom;
     }
-
     public void setCurrentRoom(Rooms currentRoom) {
         this.currentRoom = currentRoom;
     }
-
     public boolean moveNorth() {
-        Rooms roomnorth = getCurrentRoom().getNorth();
-        if (roomnorth == null) {
+        if (currentRoom.getNorth() == null) {
             return false;
         } else {
-            setCurrentRoom((roomnorth));
+            setCurrentRoom((currentRoom.getNorth());
             return true;
 
             public boolean moveEast () {
@@ -28,7 +23,6 @@ public class Player {
                     setCurrentRoom((roomeast));
                     return true;
                 }
-
                 public boolean moveSouth () {
                     Rooms roomsouth = getCurrentRoom().getSouth();
                     if (roomsouth == null) {
@@ -37,8 +31,6 @@ public class Player {
                         setCurrentRoom((roomsouth));
                         return true;
                     }
-
-
                     public boolean moveWest () {
                         Rooms roomwest = getCurrentRoom().getWest();
                         if (roomwest == null) {
@@ -56,9 +48,10 @@ public class Player {
 
     public void moveEast() {
     }
+
     public void moveSouth() {
     }
+
     public void moveWest() {
     }
-}
 }

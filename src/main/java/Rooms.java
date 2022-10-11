@@ -2,6 +2,9 @@ public class Rooms {
 
     //atributter
     private String name;
+
+    private String description;
+
     private Rooms north;
     private Rooms east;
     private Rooms south;
